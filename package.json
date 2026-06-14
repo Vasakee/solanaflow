@@ -1,0 +1,31 @@
+{
+  "name": "solanaflow",
+  "version": "1.0.0",
+  "description": "Smart Solana transaction infrastructure with AI agent",
+  "main": "dist/main.js",
+  "scripts": {
+    "start": "tsx src/main.ts",
+    "build": "tsc",
+    "dev": "tsx watch src/main.ts",
+    "generate-keypair": "tsx scripts/generateKeypair.ts"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.39.0",
+    "@solana/web3.js": "^1.98.0",
+    "@triton-one/yellowstone-grpc": "^1.0.0",
+    "jito-ts": "^3.0.0",
+    "bs58": "^6.0.0",
+    "chalk": "^5.3.0",
+    "dotenv": "^16.4.0",
+    "winston": "^3.13.0",
+    "bn.js": "^5.2.1",
+    "uuid": "^10.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/bn.js": "^5.1.0",
+    "@types/uuid": "^10.0.0",
+    "typescript": "^5.4.0",
+    "tsx": "^4.7.0"
+  }
+}
